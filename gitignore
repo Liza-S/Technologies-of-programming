@@ -1,0 +1,35 @@
+#########################
+## Embarcadero RAD Studio
+#########################
+
+## Ignore RAD Studio temporary files, build results, and
+
+# User-specific files
+
+__history/
+*.~*
+*.bak
+*.bpl
+*.cfg
+*.dcu
+*.dll
+*.exe
+*.identcache
+*.local
+*.stat
+*.xml
+*.zip
+
+#############
+## Windows detritus
+#############
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
