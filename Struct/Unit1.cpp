@@ -14,3 +14,12 @@ __fastcall TForm1::TForm1(TComponent* Owner)
 {
 }
 //---------------------------------------------------------------------------
+
+struct Books {
+	AnsiString nameAuthor, nameBook;
+	int year, pages;
+	AnsiString ShowAll()
+	{
+		return nameAuthor + " | " + nameBook + " | " + IntToStr(year) + " | "+ IntToStr(pages);
+    }
+};
