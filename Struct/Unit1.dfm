@@ -1,4 +1,4 @@
-﻿object Form1: TForm1
+object Form1: TForm1
   Left = 0
   Top = 0
   Caption = #1050#1085#1080#1075#1080
@@ -43,7 +43,7 @@
   end
   object Edit1: TEdit
     Left = 117
-    Top = 133
+    Top = 37
     Width = 121
     Height = 21
     TabOrder = 0
@@ -51,7 +51,7 @@
   end
   object Edit2: TEdit
     Left = 117
-    Top = 101
+    Top = 69
     Width = 121
     Height = 21
     TabOrder = 1
@@ -59,7 +59,7 @@
   end
   object Edit3: TEdit
     Left = 117
-    Top = 69
+    Top = 101
     Width = 121
     Height = 21
     TabOrder = 2
@@ -67,7 +67,7 @@
   end
   object Edit4: TEdit
     Left = 117
-    Top = 37
+    Top = 133
     Width = 121
     Height = 21
     TabOrder = 3

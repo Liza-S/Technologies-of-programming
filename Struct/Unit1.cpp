@@ -24,9 +24,17 @@ struct Books {
     }
 };
 
-//
+Books b[5];
+int n = 0;
+
+//Добавить книгу
 void __fastcall TForm1::addBookClick(TObject *Sender)
 {
-
+	b[n].nameAuthor = Edit1->Text;
+	b[n].nameBook = Edit2->Text;
+	b[n].year = StrToInt(Edit3->Text);
+	b[n].pages = StrToInt(Edit4->Text);
+	n++;
 }
 //---------------------------------------------------------------------------
+
