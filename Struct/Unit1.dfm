@@ -107,5 +107,6 @@ object Form1: TForm1
     Height = 25
     Caption = #1052#1072#1082#1089' '#1082#1086#1083'-'#1074#1086' '#1089#1090#1088'.'
     TabOrder = 7
+    OnClick = maxButtonClick
   end
 end

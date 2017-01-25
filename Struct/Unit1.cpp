@@ -37,14 +37,30 @@ void __fastcall TForm1::addBookClick(TObject *Sender)
 	n++;
 }
 //---------------------------------------------------------------------------
-
+// Информация о всех книгах
 void __fastcall TForm1::infoClick(TObject *Sender)
 {
 	Memo1->Clear();
 	for (int i = 0; i < n; i++) {
-        Memo1->Lines->Add(b[i].ShowAll());
+		Memo1->Lines->Add(b[i].ShowAll());
 	}
 }
 //---------------------------------------------------------------------------
 
+// Макс колво стр.
+void __fastcall TForm1::maxButtonClick(TObject *Sender)
+{
+	Memo1->Clear();
+	int maxPages, imax;
+	maxPages = b[0].pages;
+	imax = 0;
+	for (int i = 1; i < n; i++) {
+		if (b[i].pages > maxPages) {
+			maxPages = b[i].pages;
+			imax = i;
+		}
+	}
+	Memo1->Lines->Add(b[imax].ShowAll());
+}
+//---------------------------------------------------------------------------
 
