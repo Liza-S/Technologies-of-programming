@@ -1,4 +1,4 @@
-object Form1: TForm1
+﻿object Form1: TForm1
   Left = 0
   Top = 0
   Caption = #1050#1085#1080#1075#1080
@@ -89,6 +89,7 @@ object Form1: TForm1
     Height = 25
     Caption = #1044#1086#1073#1072#1074#1080#1090#1100' '#1082#1085#1080#1075#1091
     TabOrder = 5
+    OnClick = addBookClick
   end
   object info: TButton
     Left = 176

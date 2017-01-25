@@ -1,4 +1,4 @@
-//---------------------------------------------------------------------------
+﻿//---------------------------------------------------------------------------
 
 #ifndef Unit1H
 #define Unit1H
@@ -23,6 +23,7 @@ __published:	// IDE-managed Components
 	TButton *addBook;
 	TButton *info;
 	TButton *maxButton;
+	void __fastcall addBookClick(TObject *Sender);
 private:	// User declarations
 public:		// User declarations
 	__fastcall TForm1(TComponent* Owner);
