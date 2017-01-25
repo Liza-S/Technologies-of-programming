@@ -38,3 +38,13 @@ void __fastcall TForm1::addBookClick(TObject *Sender)
 }
 //---------------------------------------------------------------------------
 
+void __fastcall TForm1::infoClick(TObject *Sender)
+{
+	Memo1->Clear();
+	for (int i = 0; i < n; i++) {
+        Memo1->Lines->Add(b[i].ShowAll());
+	}
+}
+//---------------------------------------------------------------------------
+
+

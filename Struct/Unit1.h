@@ -24,6 +24,7 @@ __published:	// IDE-managed Components
 	TButton *info;
 	TButton *maxButton;
 	void __fastcall addBookClick(TObject *Sender);
+	void __fastcall infoClick(TObject *Sender);
 private:	// User declarations
 public:		// User declarations
 	__fastcall TForm1(TComponent* Owner);
