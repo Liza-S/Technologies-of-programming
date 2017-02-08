@@ -74,6 +74,28 @@ namespace Program
 			AddBalance(100);
 			cout << "Balance: " << getBalance() << endl;
 		}
+		else
+			cout << "Balance: " << getBalance() << endl;
+	}
+
+	void Account::TakeMoney(ui take)
+	{
+		if (take <= Balance)
+			Balance -= take;
+	}
+	// Обработка согласия на снятие денег со счета
+	void Account::AgTakeMoney()
+	{
+		char takeletter;
+		cout << "Вы хотите снять деньги со счета (y - да, n - нет)? ";
+		cin >> takeletter;
+		if (takeletter == 121)
+		{
+			TakeMoney(100);
+			cout << "Balance: " << getBalance() << endl;
+		}
+		else
+			cout << "Balance: " << getBalance() << endl;
 	}
 }
 

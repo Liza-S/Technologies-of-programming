@@ -22,6 +22,7 @@ namespace Program
 		void    AddBalance(ui);
 		void    AddAgBalance();
 		void    TakeMoney(ui);
+		void    AgTakeMoney();
 		~Account();
 	};
 }

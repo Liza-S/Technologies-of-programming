@@ -17,6 +17,7 @@ int main(int argc, char** argv)
 	cout << "Balance: " << a.getBalance() << endl;
 
 	a.AddAgBalance();
+	a.AgTakeMoney();
 	_getch();
 	return 0;
 }
