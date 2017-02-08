@@ -19,6 +19,9 @@ namespace Program
 		char*	getName();
 		ui		getBalance();
 		void	setBalance(ui);
+		void    AddBalance(ui);
+		void    AddAgBalance();
+		void    TakeMoney(ui);
 		~Account();
 	};
 }

@@ -16,6 +16,7 @@ int main(int argc, char** argv)
 	cout << "Name: " << a.getName() << endl;
 	cout << "Balance: " << a.getBalance() << endl;
 
+	a.AddAgBalance();
 	_getch();
 	return 0;
 }

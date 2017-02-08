@@ -1,8 +1,10 @@
 #include "Account.h"
+#include <iostream>
+using namespace std;
 
 namespace Program
 {
-	Account::Account()
+	Account::Account() //Коструктор без аргументами
 	{
 		Name = "";
 		ID = "№0";
@@ -53,4 +55,26 @@ namespace Program
 			Balance = b;
 		else Balance = 0;
 	}
+
+	void  Account::AddBalance(ui add)
+	{
+		if (Balance + add < Max)
+			Balance += add;
+		else Balance = Balance;
+	}
+
+	// Обработка согласия на добавления денег
+	void Account::AddAgBalance()
+	{
+		char addletter;
+		cout << "Вы хотите добавить деньги на счет (y - да, n - нет)? ";
+		cin >> addletter;
+		if (addletter == 121)
+		{
+			AddBalance(100);
+			cout << "Balance: " << getBalance() << endl;
+		}
+	}
 }
+
+
