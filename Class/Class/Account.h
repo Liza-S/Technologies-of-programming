@@ -9,7 +9,7 @@ namespace Program
 		char* ID;
 		char* Name;
 		ui Balance;
-		ui Max;
+		ui const Max = 999999;
 	public:
 		Account();
 		Account(char* id = "¹", char* name = "", ui balance = 0);
