@@ -41,6 +41,13 @@ object Form1: TForm1
     Height = 13
     Caption = #1050#1086#1083'-'#1074#1086' '#1089#1090#1088#1072#1085#1080#1094
   end
+  object Label5: TLabel
+    Left = 32
+    Top = 173
+    Width = 58
+    Height = 13
+    Caption = #1062#1077#1085#1072' '#1082#1085#1080#1075#1080
+  end
   object Edit1: TEdit
     Left = 117
     Top = 37
@@ -84,7 +91,7 @@ object Form1: TForm1
   end
   object addBook: TButton
     Left = 32
-    Top = 184
+    Top = 197
     Width = 113
     Height = 25
     Caption = #1044#1086#1073#1072#1074#1080#1090#1100' '#1082#1085#1080#1075#1091
@@ -93,7 +100,7 @@ object Form1: TForm1
   end
   object info: TButton
     Left = 176
-    Top = 184
+    Top = 197
     Width = 145
     Height = 25
     Caption = #1055#1088#1086#1089#1084#1086#1090#1088' '#1080#1085#1092#1086#1088#1084#1072#1094#1080#1080
@@ -102,11 +109,28 @@ object Form1: TForm1
   end
   object maxButton: TButton
     Left = 344
-    Top = 184
+    Top = 197
     Width = 121
     Height = 25
     Caption = #1052#1072#1082#1089' '#1082#1086#1083'-'#1074#1086' '#1089#1090#1088'.'
     TabOrder = 7
     OnClick = maxButtonClick
+  end
+  object Button1: TButton
+    Left = 496
+    Top = 197
+    Width = 75
+    Height = 25
+    Caption = #1062#1077#1085#1072
+    TabOrder = 8
+    OnClick = Button1Click
+  end
+  object Edit5: TEdit
+    Left = 117
+    Top = 170
+    Width = 121
+    Height = 21
+    TabOrder = 9
+    Text = 'Edit5'
   end
 end

@@ -18,9 +18,10 @@ __fastcall TForm1::TForm1(TComponent* Owner)
 struct Books {
 	AnsiString nameAuthor, nameBook;
 	int year, pages;
+	double price;
 	AnsiString ShowAll()
 	{
-		return nameAuthor + " | " + nameBook + " | " + IntToStr(year) + " | "+ IntToStr(pages);
+		return nameAuthor + " | " + nameBook + " | " + IntToStr(year) + " | "+ IntToStr(pages) + " | " + FloatToStr(price);
     }
 };
 
@@ -34,6 +35,7 @@ void __fastcall TForm1::addBookClick(TObject *Sender)
 	b[n].nameBook = Edit2->Text;
 	b[n].year = StrToInt(Edit3->Text);
 	b[n].pages = StrToInt(Edit4->Text);
+	b[n].price = StrToFloat(Edit5->Text);
 	n++;
 }
 //---------------------------------------------------------------------------
@@ -61,6 +63,18 @@ void __fastcall TForm1::maxButtonClick(TObject *Sender)
 		}
 	}
 	Memo1->Lines->Add(b[imax].ShowAll());
+}
+//---------------------------------------------------------------------------
+
+
+
+void __fastcall TForm1::Button1Click(TObject *Sender)
+{
+	Memo1->Clear();
+	double pageprice = 0;
+	for (int i = 0; i < n; i++) {
+		Memo1->Lines->Add(b[i].price / b[i].pages);
+	}
 }
 //---------------------------------------------------------------------------
 
