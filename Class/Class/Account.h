@@ -1,4 +1,4 @@
-#pragma once
+﻿#pragma once
 
 namespace Program
 {
@@ -12,7 +12,7 @@ namespace Program
 		ui const Max = 999999;
 	public:
 		Account();
-		Account(char* id = "�", char* name = "", ui balance = 0);
+		Account(char* id = "№", char* name = "", ui balance = 0);
 		void	setID(char*);
 		char*	getID();
 		void	setName(char*);

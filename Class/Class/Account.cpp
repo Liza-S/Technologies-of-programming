@@ -1,17 +1,17 @@
-#include "Account.h"
+п»ї#include "Account.h"
 #include <iostream>
 using namespace std;
 
 namespace Program
 {
-	Account::Account() //Коструктор без аргументами
+	Account::Account() //РљРѕСЃС‚СЂСѓРєС‚РѕСЂ Р±РµР· Р°СЂРіСѓРјРµРЅС‚РѕРІ
 	{
 		Name = "";
-		ID = "№0";
+		ID = "в„–0";
 		Balance = 0;
 	}
 
-	Account::Account(char* id, char* name, ui balance) //Коструктор с аргументами
+	Account::Account(char* id, char* name, ui balance) //РљРѕСЃС‚СЂСѓРєС‚РѕСЂ СЃ Р°СЂРіСѓРјРµРЅС‚Р°РјРё
 	{
 		ID = id;
 		Name = name;
@@ -63,11 +63,11 @@ namespace Program
 		else Balance = Balance;
 	}
 
-	// Обработка согласия на добавления денег
+	// РћР±СЂР°Р±РѕС‚РєР° СЃРѕРіР»Р°СЃРёСЏ РЅР° РґРѕР±Р°РІР»РµРЅРёСЏ РґРµРЅРµРі
 	void Account::AddAgBalance()
 	{
 		char addletter;
-		cout << "Вы хотите добавить деньги на счет (y - да, n - нет)? ";
+		cout << "Р’С‹ С…РѕС‚РёС‚Рµ РґРѕР±Р°РІРёС‚СЊ РґРµРЅСЊРіРё РЅР° СЃС‡РµС‚ (y - РґР°, n - РЅРµС‚)? ";
 		cin >> addletter;
 		if (addletter == 121)
 		{
@@ -83,11 +83,11 @@ namespace Program
 		if (take <= Balance)
 			Balance -= take;
 	}
-	// Обработка согласия на снятие денег со счета
+	// РћР±СЂР°Р±РѕС‚РєР° СЃРѕРіР»Р°СЃРёСЏ РЅР° СЃРЅСЏС‚РёРµ РґРµРЅРµРі СЃРѕ СЃС‡РµС‚Р°
 	void Account::AgTakeMoney()
 	{
 		char takeletter;
-		cout << "Вы хотите снять деньги со счета (y - да, n - нет)? ";
+		cout << "Р’С‹ С…РѕС‚РёС‚Рµ СЃРЅСЏС‚СЊ РґРµРЅСЊРіРё СЃРѕ СЃС‡РµС‚Р° (y - РґР°, n - РЅРµС‚)? ";
 		cin >> takeletter;
 		if (takeletter == 121)
 		{
