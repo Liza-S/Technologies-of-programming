@@ -13,8 +13,8 @@ int main(int argc, char** argv)
 	Account a("№11111", "Liza", 10000); 
 
 	cout << "ID: " << a.getID() << endl;
-	cout << "Name: " << a.getName() << endl;
-	cout << "Balance: " << a.getBalance() << endl;
+	cout << "Имя: " << a.getName() << endl;
+	cout << "Ваш Баланс: " << a.getBalance() << endl;
 
 	a.AddAgBalance();
 	a.AgTakeMoney();

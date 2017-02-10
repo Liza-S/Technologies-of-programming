@@ -4,14 +4,14 @@ using namespace std;
 
 namespace Program
 {
-	Account::Account() //Коструктор без аргументов
+	Account::Account() //Конструктор без аргументов
 	{
 		Name = "";
 		ID = "№0";
 		Balance = 0;
 	}
 
-	Account::Account(char* id, char* name, ui balance) ////Коструктор с аргументами
+	Account::Account(char* id, char* name, ui balance) //Конструктор с аргументами
 	{
 		ID = id;
 		Name = name;
@@ -58,8 +58,12 @@ namespace Program
 
 	void  Account::AddBalance(ui add)
 	{
-		if (Balance + add < Max)
+		cout << "Сколько вы хотите добавить: ";
+		cin >> add;
+		if (Balance + add < Max) {
 			Balance += add;
+			cout << "На ваш счет было добавлено " << add << endl;
+		}
 		else Balance = Balance;
 	}
 
@@ -69,19 +73,24 @@ namespace Program
 		char addletter;
 		cout << "Вы хотите добавить деньги на счет(y - да, n - нет)? ";
 		cin >> addletter;
-		if (addletter == 121)
+		if (addletter == 121) // 'y'
 		{
-			AddBalance(100);
-			cout << "Balance: " << getBalance() << endl;
+
+			AddBalance(Balance);
+			cout << "Ваш Баланс: " << getBalance() << endl;
 		}
 		else
-			cout << "Balance: " << getBalance() << endl;
+			cout << "Ваш Баланс: " << getBalance() << endl;
 	}
 
 	void Account::TakeMoney(ui take)
 	{
-		if (take <= Balance)
+		cout << "Сколько вы хотите снять денег со счета: ";
+		cin >> take;
+		if (take <= Balance) {
 			Balance -= take;
+			cout << "С вашего счета было снято " << take << endl;
+		}
 	}
 	// Обработка согласия на снятие денег со счета
 	void Account::AgTakeMoney()
@@ -89,13 +98,13 @@ namespace Program
 		char takeletter;
 		cout << "Вы хотите снять деньги со счета (y - да, n - нет)? ";
 		cin >> takeletter;
-		if (takeletter == 121)
+		if (takeletter == 121) //'y'
 		{
-			TakeMoney(100);
-			cout << "Balance: " << getBalance() << endl;
+			TakeMoney(Balance);
+			cout << "Ваш Баланс: " << getBalance() << endl;
 		}
 		else
-			cout << "Balance: " << getBalance() << endl;
+			cout << "Ваш Баланс: " << getBalance() << endl;
 	}
 }
 
