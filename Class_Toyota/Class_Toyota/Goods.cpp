@@ -72,5 +72,13 @@ namespace Program
 		cout << "Изготовитель: " << manufacturer << endl;
 	}
 
+	//Цена в долларах
+	float Goods::setpriceDollar()
+	{
+		float priceDollar = 0.00;
+		priceDollar = priceHryvnia / dollar;
+		return priceDollar;
+	}
+
 }
 

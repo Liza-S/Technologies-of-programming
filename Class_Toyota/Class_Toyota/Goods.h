@@ -20,7 +20,7 @@ namespace Program
 		char*	info();
 		float	getPriceHryvnia();
 		// цена в долларах
-		float	setpriceDollar(float priceHryvnia);
+		float	setpriceDollar();
 		// Увеличит цену для Toyota
 		float	increasePriceDollar();
 		~Goods();
