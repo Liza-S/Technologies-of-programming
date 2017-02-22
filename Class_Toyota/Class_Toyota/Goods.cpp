@@ -28,5 +28,26 @@ namespace Program
 	Goods::~Goods()
 	{
 	}
+
+	void Goods::setNameGood(char* inameGood)
+	{
+		nameGood = inameGood;
+	}
+
+	char* Goods::getNameGood() 
+	{
+		return nameGood;
+	}
+
+	void Goods::setManufactured(char* imanufacturer)
+	{
+		manufacturer = imanufacturer;
+	}
+
+	char* Goods::getManufactured()
+	{
+		return manufacturer;
+	}
+
 }
 
