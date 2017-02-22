@@ -22,7 +22,7 @@ namespace Program
 		// цена в долларах
 		float	setpriceDollar(float priceHryvnia);
 		// Увеличит цену для Toyota
-		float	incriacepriceDollar();
+		float	increasepriceDollar();
 		~Goods();
 	};
 
