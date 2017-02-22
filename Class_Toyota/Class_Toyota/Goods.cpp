@@ -49,5 +49,23 @@ namespace Program
 		return manufacturer;
 	}
 
+	void Goods::setPriceHryvnia(float ipriceHryvnia)
+	{
+		if (ipriceHryvnia < 0)
+		{
+			cout << "Введите положительную цену!";
+		}
+		else
+			priceHryvnia = ipriceHryvnia;
+	}
+
+	float Goods::getPriceHryvnia()
+	{
+		return priceHryvnia;
+	}
+
+	//Вывод информации
+	//char* Goods::info
+
 }
 

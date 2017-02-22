@@ -16,13 +16,13 @@ namespace Program
 		char*	getNameGood();
 		void	setManufactured(char*);
 		char*	getManufactured();
-		void	setpriceHryvnia(float);
+		void	setPriceHryvnia(float);
 		char*	info();
-		float	getpriceHryvnia();
+		float	getPriceHryvnia();
 		// цена в долларах
 		float	setpriceDollar(float priceHryvnia);
 		// Увеличит цену для Toyota
-		float	increasepriceDollar();
+		float	increasePriceDollar();
 		~Goods();
 	};
 
