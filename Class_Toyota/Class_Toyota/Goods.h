@@ -11,7 +11,7 @@ namespace Program
 		float const dollar = 27.40;
 	public:
 		Goods();
-		Goods(char* nameGood, float priceHryvnia, char* manufacturer);
+		Goods(char* inameGood, float ipriceHryvnia, char* imanufacturer);
 		void	setNameGood(char*);
 		char*	getNameGood();
 		void	setManufactured(char*);
