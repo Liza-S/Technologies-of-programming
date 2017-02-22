@@ -65,7 +65,12 @@ namespace Program
 	}
 
 	//Вывод информации
-	//char* Goods::info
+	char* Goods::info()
+	{
+		cout << "Наименование: " << nameGood << endl;
+		cout << "Цена в гривне: " << priceHryvnia << endl;
+		cout << "Изготовитель: " << manufacturer << endl;
+	}
 
 }
 
