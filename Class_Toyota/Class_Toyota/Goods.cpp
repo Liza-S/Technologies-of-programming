@@ -9,13 +9,13 @@ namespace Program
 	{
 		nameGood = "";
 		priceHryvnia = 0.00;
-		manufacturer = "";
+		country = "";
 	}
 
-	Goods::Goods(char* inameGood, float ipriceHryvnia, char* imanufacturer)
+	Goods::Goods(char* inameGood, float ipriceHryvnia, char* icountry)
 	{
 		nameGood = inameGood;
-		manufacturer = imanufacturer;
+		country = icountry;
 		if (ipriceHryvnia < 0)
 		{
 			cout << "Введите положительную цену!";
@@ -39,14 +39,14 @@ namespace Program
 		return nameGood;
 	}
 
-	void Goods::setManufactured(char* imanufacturer)
+	void Goods::setCountry(char* icountry)
 	{
-		manufacturer = imanufacturer;
+		country = icountry;
 	}
 
-	char* Goods::getManufactured()
+	char* Goods::getCountry()
 	{
-		return manufacturer;
+		return country;
 	}
 
 	void Goods::setPriceHryvnia(float ipriceHryvnia)
@@ -69,7 +69,7 @@ namespace Program
 	{
 		cout << "Наименование: " << nameGood << endl;
 		cout << "Цена в гривне: " << priceHryvnia << endl;
-		cout << "Изготовитель: " << manufacturer << endl;
+		cout << "Страна-изготовитель: " << country << endl;
 	}
 
 	float priceDollar = 0.00;
