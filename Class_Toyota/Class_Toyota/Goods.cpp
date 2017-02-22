@@ -72,13 +72,32 @@ namespace Program
 		cout << "Изготовитель: " << manufacturer << endl;
 	}
 
+	float priceDollar = 0.00;
 	//Цена в долларах
 	void Goods::setpriceDollar()
 	{
-		float priceDollar = 0.00;
 		priceDollar = priceHryvnia / dollar;
 		cout << "Цена в долларах: " << priceDollar << endl;
 	}
 
+	// Увеличить цену в долларах
+	void Goods::increasePriceDollar() 
+	{
+		float add;
+		if (nameGood == "Toyota") {
+			cout << "На сколько вы хотите увеличить цену Toyota (в $): ";
+			cin >> add;
+			while (add <= 0)
+			{
+				cout << "Введите положительное число: ";
+				cin >> add;
+			}
+			priceDollar = priceDollar + add;
+			cout << "Вы увеличили цену на:" << add << "$" << endl;
+			cout << "Цена в долларах: " << priceDollar << endl;
+		}
+		else
+			cout << "Вы не можете увеличить цену, так как у вас нет Toyota. :(";
+	}
 }
 

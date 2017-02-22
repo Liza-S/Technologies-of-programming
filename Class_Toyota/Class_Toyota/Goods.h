@@ -22,7 +22,7 @@ namespace Program
 		// цена в долларах
 		void	setpriceDollar();
 		// Увеличит цену для Toyota
-		float	increasePriceDollar();
+		void	increasePriceDollar();
 		~Goods();
 	};
 

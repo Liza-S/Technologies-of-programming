@@ -9,9 +9,10 @@ int main(int argc, char** argv)
 {
 	setlocale(LC_ALL, "Russian");
 
-	Goods a("nod", 5000.00, "j");
+	Goods a("Toyota", 200000.00, "j");
 	a.info();
 	a.setpriceDollar();
+	a.increasePriceDollar();
 	
 	_getch();
 	return 0;
