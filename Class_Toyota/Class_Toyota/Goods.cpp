@@ -65,7 +65,7 @@ namespace Program
 	}
 
 	//Вывод информации
-	char* Goods::info()
+	void Goods::info()
 	{
 		cout << "Наименование: " << nameGood << endl;
 		cout << "Цена в гривне: " << priceHryvnia << endl;
@@ -73,11 +73,11 @@ namespace Program
 	}
 
 	//Цена в долларах
-	float Goods::setpriceDollar()
+	void Goods::setpriceDollar()
 	{
 		float priceDollar = 0.00;
 		priceDollar = priceHryvnia / dollar;
-		return priceDollar;
+		cout << "Цена в долларах: " << priceDollar << endl;
 	}
 
 }

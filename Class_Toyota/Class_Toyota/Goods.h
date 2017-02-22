@@ -17,10 +17,10 @@ namespace Program
 		void	setManufactured(char*);
 		char*	getManufactured();
 		void	setPriceHryvnia(float);
-		char*	info();
+		void	info();
 		float	getPriceHryvnia();
 		// цена в долларах
-		float	setpriceDollar();
+		void	setpriceDollar();
 		// Увеличит цену для Toyota
 		float	increasePriceDollar();
 		~Goods();
