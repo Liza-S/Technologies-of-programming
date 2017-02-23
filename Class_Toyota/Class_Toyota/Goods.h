@@ -5,15 +5,15 @@ namespace Program
 	class Goods
 	{
 	private:
-		char* nameGood; //Наименование товара
+		char* carModel;
 		float priceHryvnia;
 		char* country;
 		float const dollar = 27.40;
 	public:
 		Goods();
-		Goods(char* inameGood, float ipriceHryvnia, char* imanufacturer);
-		void	setNameGood(char*);
-		char*	getNameGood();
+		Goods(char* icarModel, float ipriceHryvnia, char* imanufacturer);
+		void	setCarModel(char*);
+		char*	getCarModel();
 		void	setCountry(char*);
 		char*	getCountry();
 		void	setPriceHryvnia(float);

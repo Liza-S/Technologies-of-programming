@@ -7,14 +7,14 @@ namespace Program
 {
 	Goods::Goods() //Конструктор без аргументов
 	{
-		nameGood = "";
+		carModel = "";
 		priceHryvnia = 0.00;
 		country = "";
 	}
 
-	Goods::Goods(char* inameGood, float ipriceHryvnia, char* icountry)
+	Goods::Goods(char* icarModel, float ipriceHryvnia, char* icountry)
 	{
-		nameGood = inameGood;
+		carModel = icarModel;
 		country = icountry;
 		if (ipriceHryvnia < 0)
 		{
@@ -29,14 +29,14 @@ namespace Program
 	{
 	}
 
-	void Goods::setNameGood(char* inameGood)
+	void Goods::setCarModel(char* icarModel)
 	{
-		nameGood = inameGood;
+		carModel = icarModel;
 	}
 
-	char* Goods::getNameGood() 
+	char* Goods::getCarModel() 
 	{
-		return nameGood;
+		return carModel;
 	}
 
 	void Goods::setCountry(char* icountry)
@@ -67,7 +67,7 @@ namespace Program
 	//Вывод информации
 	void Goods::info()
 	{
-		cout << "Наименование: " << nameGood << endl;
+		cout << "Наименование: " << carModel << endl;
 		cout << "Цена в гривне: " << priceHryvnia << endl;
 		cout << "Страна-изготовитель: " << country << endl;
 	}
@@ -84,7 +84,7 @@ namespace Program
 	void Goods::increasePriceDollar() 
 	{
 		float add;
-		if (nameGood == "Toyota") {
+		if (carModel == "Toyota") {
 			cout << "На сколько вы хотите увеличить цену Toyota (в $): ";
 			cin >> add;
 			while (add <= 0)
