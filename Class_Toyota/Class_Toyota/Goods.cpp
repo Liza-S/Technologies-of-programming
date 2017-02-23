@@ -12,16 +12,11 @@ namespace Program
 		country = "";
 	}
 
-	Goods::Goods(char* icarModel, float ipriceHryvnia, char* icountry)
+	Goods::Goods(std::string carModel, float priceHryvnia, std::string country)
 	{
-		carModel = icarModel;
-		country = icountry;
-		if (ipriceHryvnia < 0)
-		{
-			cout << "Введите положительную цену!";
-		}
-		else
-			priceHryvnia = ipriceHryvnia;
+		Goods::setCarModel(carModel);
+		Goods::setCountry(country);
+		Goods::setPriceHryvnia(priceHryvnia);
 	}
 
 
@@ -29,45 +24,46 @@ namespace Program
 	{
 	}
 
-	void Goods::setCarModel(char* icarModel)
+	void Goods::setCarModel(std::string icarModel)
 	{
-		carModel = icarModel;
+		Goods::carModel = icarModel;
 	}
 
-	char* Goods::getCarModel() 
+	std::string Goods::getCarModel()
 	{
-		return carModel;
+		return Goods::carModel;
 	}
 
-	void Goods::setCountry(char* icountry)
+	void Goods::setCountry(std::string icountry)
 	{
-		country = icountry;
+		Goods::country = icountry;
 	}
 
-	char* Goods::getCountry()
+	std::string Goods::getCountry()
 	{
-		return country;
+		return Goods::country;
 	}
 
 	void Goods::setPriceHryvnia(float ipriceHryvnia)
 	{
-		if (ipriceHryvnia < 0)
+		while (ipriceHryvnia < 0)
 		{
 			cout << "Введите положительную цену!";
+			std::cin >> ipriceHryvnia;
 		}
-		else
 			priceHryvnia = ipriceHryvnia;
 	}
 
-	float Goods::getPriceHryvnia()
+	/**float Goods::getPriceHryvnia()
 	{
 		return priceHryvnia;
-	}
+	}**/
 
 	//Вывод информации
 	void Goods::info()
 	{
-		cout << "Наименование: " << carModel << endl;
+		cout << endl;
+		cout << "Марка: " << carModel << endl;
 		cout << "Цена в гривне: " << priceHryvnia << endl;
 		cout << "Страна-изготовитель: " << country << endl;
 	}
@@ -83,6 +79,7 @@ namespace Program
 	// Увеличить цену в долларах
 	void Goods::increasePriceDollar() 
 	{
+
 		float add;
 		if (carModel == "Toyota") {
 			cout << "На сколько вы хотите увеличить цену Toyota (в $): ";
