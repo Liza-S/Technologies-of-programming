@@ -1,21 +1,23 @@
 ﻿#pragma once
 
+#include <string>
+
 namespace Program
 {
 	class Goods
 	{
 	private:
-		char* carModel;
+		std::string carModel;
 		float priceHryvnia;
-		char* country;
+		std::string country;
 		float const dollar = 27.40;
 	public:
 		Goods();
-		Goods(char* icarModel, float ipriceHryvnia, char* imanufacturer);
-		void	setCarModel(char*);
-		char*	getCarModel();
-		void	setCountry(char*);
-		char*	getCountry();
+		Goods(std::string, float , std::string);
+		void	setCarModel(std::string);
+		std::string	getCarModel();
+		void	setCountry(std::string);
+		std::string	getCountry();
 		void	setPriceHryvnia(float);
 		void	info();
 		float	getPriceHryvnia();
