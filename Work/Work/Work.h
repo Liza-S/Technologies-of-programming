@@ -7,10 +7,19 @@ namespace Program
 	class Work
 	{
 	private:
-		int work_hours;
-		int const pay_work_hour = 30;
+		int workHours;
+		int const payOneHour;
 	public:
 		Work();
+		Work(int, int);
+		void setWorkHours(int);
+		int getWorkHours();
+		void setPayOneHour(int);
+		int getPayOneHour();
+		void info();
+
+		// Общая стоимость работы
+		void costWork();
 		~Work();
 	};
 }
