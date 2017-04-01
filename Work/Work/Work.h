@@ -8,7 +8,7 @@ namespace Program
 	{
 	private:
 		int workHours;
-		int const payOneHour;
+		int payOneHour;
 	public:
 		Work();
 		Work(int, int);
