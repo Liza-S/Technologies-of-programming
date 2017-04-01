@@ -9,8 +9,8 @@ int main(int argc, char** argv)
 {
 	setlocale(LC_ALL, "Russian");
 
-	std::int8_t workHoursL;
-	std::int8_t payOneHourL;
+	std::int16_t workHoursL;
+	std::int16_t payOneHourL;
 
 	std::cout << "¬ведите врем€ потраченное на работу: ";
 	std::cin >> workHoursL;
@@ -18,6 +18,11 @@ int main(int argc, char** argv)
 	std::cout << "¬ведите плату за час работы: ";
 	std::cin >> payOneHourL;
 
+	Work *work = new Work(workHoursL, payOneHourL);
+	work->setWorkHours(workHoursL);
+	work->setPayOneHour(payOneHourL);
+	work->info();
+	work->costWork();
 
 	_getch();
 	return 0;
