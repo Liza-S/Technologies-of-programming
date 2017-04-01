@@ -54,4 +54,5 @@ namespace Program
 		costWork = workHours * payOneHour;
 		cout << "Стоимость работы: " << costWork << endl;
 	}
+
 }

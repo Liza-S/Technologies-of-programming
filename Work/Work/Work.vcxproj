@@ -111,9 +111,11 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Source.cpp" />
+    <ClCompile Include="Tax.cpp" />
     <ClCompile Include="Work.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Tax.h" />
     <ClInclude Include="Work.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
