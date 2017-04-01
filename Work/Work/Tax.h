@@ -6,6 +6,8 @@ namespace Program
 	// Вычислить, сколько денег получит работник, если вычтут подоходный налог
 	class Tax : public Work
 	{
+	private:
+		float income_tax;
 	public:
 		Tax();
 		~Tax();
