@@ -1,4 +1,4 @@
-#include "Work.h"
+ï»¿#include "Work.h"
 #include <iostream>;
 using namespace std;
 
@@ -44,15 +44,15 @@ namespace Program
 	void Work::info()
 	{
 		cout << endl;
-		cout << "×àñû ðàáîòû: " << workHours << endl;
-		cout << "Ïëàòà çà ÷àñ ðàáîòû: " << payOneHour << endl;
+		cout << "Ð§Ð°ÑÑ‹ Ñ€Ð°Ð±Ð¾Ñ‚Ñ‹: " << workHours << endl;
+		cout << "ÐŸÐ»Ð°Ñ‚Ð° Ð·Ð° Ñ‡Ð°Ñ Ñ€Ð°Ð±Ð¾Ñ‚Ñ‹: " << payOneHour << endl;
 	}
 
 	void Work::costWork()
 	{
 		int costWork = 0;
 		costWork = workHours * payOneHour;
-		cout << "Ñòîèìîñòü ðàáîòû: " << costWork << endl;
+		cout << "Ð¡Ñ‚Ð¾Ð¸Ð¼Ð¾ÑÑ‚ÑŒ Ñ€Ð°Ð±Ð¾Ñ‚Ñ‹: " << costWork << endl;
 	}
 
 }

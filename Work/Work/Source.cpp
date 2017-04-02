@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include <conio.h>
 #include "Work.h"
 
@@ -12,10 +12,10 @@ int main(int argc, char** argv)
 	std::int16_t workHoursL;
 	std::int16_t payOneHourL;
 
-	std::cout << "Ââåäèòå âðåìÿ ïîòðà÷åííîå íà ðàáîòó: ";
+	std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð²Ñ€ÐµÐ¼Ñ Ð¿Ð¾Ñ‚Ñ€Ð°Ñ‡ÐµÐ½Ð½Ð¾Ðµ Ð½Ð° Ñ€Ð°Ð±Ð¾Ñ‚Ñƒ: ";
 	std::cin >> workHoursL;
 
-	std::cout << "Ââåäèòå ïëàòó çà ÷àñ ðàáîòû: ";
+	std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð¿Ð»Ð°Ñ‚Ñƒ Ð·Ð° Ñ‡Ð°Ñ Ñ€Ð°Ð±Ð¾Ñ‚Ñ‹: ";
 	std::cin >> payOneHourL;
 
 	Work *work = new Work(workHoursL, payOneHourL);
