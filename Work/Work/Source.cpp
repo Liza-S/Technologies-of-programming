@@ -16,13 +16,29 @@ int main(int argc, char** argv)
 
 	std::cout << "Введите время потраченное на работу: ";
 	std::cin >> workHoursL;
+	while (workHoursL < 0 )
+	{
+		std::cout << "Введите время потраченное на работу: ";
+		std::cin >> workHoursL;
+	}
 
 	std::cout << "Введите плату за час работы: ";
 	std::cin >> payOneHourL;
+	while (payOneHourL < 0)
+	{
+		std::cout << "Введите плату за час работы: ";
+		std::cin >> payOneHourL;
+	}
 
 	std::float_t income_taxL;
 	std::cout << "Введите подоходный налог (в процентах): ";
 	std::cin >> income_taxL;
+	while (!(income_taxL >= 0.00 && income_taxL < 100.00))
+	{
+		std::cout << "Введите подоходный налог (в процентах): ";
+		std::cin >> income_taxL;
+	}
+	
 	cout << "Подоходный налог: " << income_taxL << "%" << endl;
 
 	Tax *work = new Tax(workHoursL, payOneHourL, income_taxL);
