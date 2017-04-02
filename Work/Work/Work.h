@@ -19,8 +19,7 @@ namespace Program
 		void info();
 
 		// Общая стоимость работы
-		void costWork();
+		int costWork();
 		~Work();
 	};
 }
-

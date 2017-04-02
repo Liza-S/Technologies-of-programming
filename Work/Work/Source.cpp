@@ -1,9 +1,11 @@
 ﻿#include <iostream>
 #include <conio.h>
 #include "Work.h"
+#include "Tax.h"
 
 using namespace std;
 using Program::Work;
+using Program::Tax;
 
 int main(int argc, char** argv)
 {
@@ -18,18 +20,18 @@ int main(int argc, char** argv)
 	std::cout << "Введите плату за час работы: ";
 	std::cin >> payOneHourL;
 
-	Work *work = new Work(workHoursL, payOneHourL);
-	work->setWorkHours(workHoursL);
-	work->setPayOneHour(payOneHourL);
-	work->info();
-	work->costWork();
-
 	std::float_t income_taxL;
-	cout << endl;
 	std::cout << "Введите подоходный налог (в процентах): ";
 	std::cin >> income_taxL;
 	cout << "Подоходный налог: " << income_taxL << "%" << endl;
 
+	Tax *work = new Tax(workHoursL, payOneHourL, income_taxL);
+	work->setWorkHours(workHoursL);
+	work->setPayOneHour(payOneHourL);
+	work->info();
+	cout << "Стоимость работы: " << work->costWork() << endl;
+	work->setTax(income_taxL);
+	work->incomeTax();
 
 	_getch();
 	return 0;

@@ -4,11 +4,6 @@ using namespace std;
 
 namespace Program
 {
-//::Tax()
-//{
-//}
-
-
 	void Tax::setTax(float iincome_tax)
 	{
 		Tax::income_tax = iincome_tax;
@@ -19,9 +14,12 @@ namespace Program
 		return Tax::income_tax;
 	}
 
-	void Tax::incomeTax() 
+	float Tax::incomeTax()
 	{
-
+		float costWorkTax = 0.00;
+		costWorkTax = costWork() - costWork() * (income_tax / 100);
+		cout << "Стоимость работы с налогом: " << costWorkTax << endl;
+		return costWorkTax;
 	}
 
 	Tax::~Tax()

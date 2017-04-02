@@ -48,11 +48,10 @@ namespace Program
 		cout << "Плата за час работы: " << payOneHour << endl;
 	}
 
-	void Work::costWork()
+	int Work::costWork()
 	{
 		int costWork = 0;
 		costWork = workHours * payOneHour;
-		cout << "Стоимость работы: " << costWork << endl;
+		return costWork;
 	}
-
 }
