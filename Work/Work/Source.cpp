@@ -24,6 +24,13 @@ int main(int argc, char** argv)
 	work->info();
 	work->costWork();
 
+	std::float_t income_taxL;
+	cout << endl;
+	std::cout << "Введите подоходный налог (в процентах): ";
+	std::cin >> income_taxL;
+	cout << "Подоходный налог: " << income_taxL << "%" << endl;
+
+
 	_getch();
 	return 0;
 }

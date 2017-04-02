@@ -1,4 +1,6 @@
 ﻿#include "Tax.h"
+#include <iostream>
+using namespace std;
 
 namespace Program
 {
@@ -17,8 +19,13 @@ namespace Program
 		return Tax::income_tax;
 	}
 
+	void Tax::incomeTax() 
+	{
+
+	}
+
 	Tax::~Tax()
-{
-}
+	{
+	}
 }
 
