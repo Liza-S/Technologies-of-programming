@@ -10,7 +10,11 @@ namespace Program
 		float income_tax;
 	public:
 		Tax() : income_tax(0.00), Work() {};
-
+		Tax(int workHours, int payOneHour, float income_tax) : Work(workHours, payOneHour) {
+			Tax::setTax(income_tax);
+		}
+		void setTax(float);
+		float getTax();
 		~Tax();
 	};
 }

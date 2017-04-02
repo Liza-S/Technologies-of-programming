@@ -11,7 +11,7 @@ namespace Program
 		int payOneHour;
 	public:
 		Work();
-		Work(int, int);
+		Work(int workHours, int payOneHour);
 		void setWorkHours(int);
 		int getWorkHours();
 		void setPayOneHour(int);
