@@ -9,7 +9,8 @@ namespace Program
 	private:
 		float income_tax;
 	public:
-		Tax();
+		Tax() : income_tax(0.00), Work() {};
+
 		~Tax();
 	};
 }
