@@ -19,7 +19,9 @@ namespace Program
 		void info();
 
 		// Общая стоимость работы
-		int costWork();
+		virtual int costWork();
+
+		virtual float incomeTax() = 0;
 		~Work();
 	};
 }

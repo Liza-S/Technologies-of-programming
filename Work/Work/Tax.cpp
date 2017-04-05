@@ -14,7 +14,7 @@ namespace Program
 		return Tax::income_tax;
 	}
 
-	float Tax::incomeTax()
+	 float Tax::incomeTax()
 	{
 		float costWorkTax = 0.00;
 		costWorkTax = costWork() - costWork() * (income_tax / 100);

@@ -16,7 +16,6 @@ namespace Program
 		void setTax(float);
 		float getTax();
 		float incomeTax();
-		void showTax();
 		~Tax();
 	};
 }
