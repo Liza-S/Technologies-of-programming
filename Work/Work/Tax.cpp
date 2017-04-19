@@ -1,4 +1,5 @@
 ﻿#include "Tax.h"
+#include "Work.h"
 #include <iostream>
 using namespace std;
 
@@ -14,12 +15,12 @@ namespace Program
 		return Tax::income_tax;
 	}
 
-	 float Tax::incomeTax()
+	int Tax::costWork()
 	{
-		float costWorkTax = 0.00;
-		costWorkTax = costWork() - costWork() * (income_tax / 100);
-		cout << "Стоимость работы с налогом: " << costWorkTax << endl;
-		return costWorkTax;
+		int costWork = 0;
+		costWork = (workHours * payOneHour) - (workHours * payOneHour) * (income_tax / 100);
+		cout << "Стоимость работы с налогом: " << costWork << endl; 
+		return costWork;
 	}
 
 	Tax::~Tax()

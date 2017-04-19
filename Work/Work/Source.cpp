@@ -45,9 +45,9 @@ int main(int argc, char** argv)
 	work->setWorkHours(workHoursL);
 	work->setPayOneHour(payOneHourL);
 	work->info();
-	cout << "Стоимость работы: " << work->costWork() << endl;
+	cout << "Стоимость работы: " << work->Work::costWork() << endl;
 	work->setTax(income_taxL);
-	work->incomeTax();
+	work->Tax::costWork();
 
 	_getch();
 	return 0;

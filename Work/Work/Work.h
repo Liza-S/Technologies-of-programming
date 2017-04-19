@@ -6,7 +6,7 @@ namespace Program
 	// Общая стоимость работы 
 	class Work
 	{
-	private:
+	public:
 		int workHours;
 		int payOneHour;
 	public:
@@ -21,7 +21,7 @@ namespace Program
 		// Общая стоимость работы
 		virtual int costWork();
 
-		virtual float incomeTax() = 0;
+		//virtual float incomeTax() = 0;
 		~Work();
 	};
 }
